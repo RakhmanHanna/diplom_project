@@ -1,0 +1,21 @@
+@import './fonts.scss';
+@import './constants.scss';
+@import './mixins.scss';
+@import './home-section.scss';
+@import './footer.scss';
+
+body {
+  font-family: Poppins Regular;
+}
+.container {
+  @include flex-row;
+  width: 80%;
+  margin: auto;
+}
+.home-section {
+  background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
+  margin: 0 auto;
+}
+footer {
+  background: #112D57;
+}
