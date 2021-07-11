@@ -1,0 +1,89 @@
+.pricing-text {
+    text-align: center;
+    h1 {
+        padding: 101px 0 30px;
+        margin: 0;
+        font-size: 46px;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+        color: $black;
+    }
+    p {
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $gray;
+        padding-bottom: 63px;
+    }
+}
+
+.pricing-item {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    &-education {
+        text-align: center;
+        background: $white;
+        border: 1px solid #DEDEDE;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: 0 16.5px;
+        h2 {
+            font-size: 30px;
+            line-height: 33px;
+            text-align: center;
+            letter-spacing: 0.1px;
+            color: $black;
+            font-family: Poppins Bold;
+            margin: 0;
+            padding: 50px 0 10px;
+        }
+        p {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.1px;
+            color: $gray;
+            font-family: Poppins Bold;
+            margin: 0;
+            padding-bottom: 30px;
+        }
+        img {
+            padding: 0 36px 30px 40px;
+        }
+        .price-info {
+            @include flex-row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 37.5px;
+            &__descr {
+                @include flex-column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+        .price-info_descr {
+            p {
+                font-size: 15px;
+                line-height: 27px;
+                letter-spacing: 0.2px;
+                color: $black;
+                font-family: Poppins Regular;
+            }
+        }
+        button {
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.2px;
+            color: $white;
+            padding: 18px 82px;
+            width: 251px;
+            height: 52px;
+            background: $blue;
+            box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+            border-radius: 39px;
+            border-style: none;
+            margin: 40px 42px;
+        }
+    }
+}

@@ -4,6 +4,7 @@
 @import './header.scss';
 @import './home-section.scss';
 @import './services.scss';
+@import './price.scss';
 @import 'subscribe.scss';
 @import './footer.scss';
 
@@ -32,6 +33,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .subscribe-section {
 background-color: $white;
 }
