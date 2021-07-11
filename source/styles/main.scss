@@ -2,6 +2,7 @@
 @import './constants.scss';
 @import './mixins.scss';
 @import './home-section.scss';
+@import './services.scss';
 @import './footer.scss';
 
 body {
@@ -10,12 +11,21 @@ body {
 .container {
   @include flex-row;
   width: 80%;
-  margin: auto;
+  margin: 0;
 }
 .home-section {
   background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
   margin: 0 auto;
 }
+.services-section {
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   background: #112D57;
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
 }
