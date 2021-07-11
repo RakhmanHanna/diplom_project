@@ -1,6 +1,7 @@
 @import './fonts.scss';
 @import './constants.scss';
 @import './mixins.scss';
+@import './header.scss';
 @import './home-section.scss';
 @import './services.scss';
 @import 'subscribe.scss';
@@ -11,12 +12,20 @@ body {
 }
 .container {
   @include flex-row;
+  justify-content: space-between;
+  align-items: center;
   width: 80%;
   margin: 0;
 }
+
 .home-section {
   background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
   margin: 0 auto;
+}
+.header {
+  @include flex-row;
+  justify-content: space-around;
+  align-items: center;
 }
 .services-section {
   @include flex-row;
