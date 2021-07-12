@@ -5,12 +5,14 @@
 @import './home-section.scss';
 @import './services.scss';
 @import './price.scss';
-@import 'subscribe.scss';
+@import './subscribe.scss';
 @import './footer.scss';
 
 body {
   font-family: Poppins Regular;
+  margin: 0;
 }
+
 .container {
   @include flex-row;
   justify-content: space-between;
@@ -19,27 +21,24 @@ body {
   margin: 0;
 }
 
-.home-section {
-  background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
-  margin: 0 auto;
-}
 .header {
   @include flex-row;
   justify-content: space-around;
   align-items: center;
 }
+
+.home-section {
+  background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
+  margin: 0 auto;
+}
+
 .services-section {
   @include flex-row;
   justify-content: center;
   align-items: center;
 }
 
-.subscribe-section {
-background-color: $white;
-}
 footer {
   background: #112D57;
-  @include flex-row;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0;
 }

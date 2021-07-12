@@ -1,54 +1,73 @@
-.footer-content {
-    img {
-        border-radius: 22px;
-    }
+.footer {
+    margin: 0 auto;
+    width: 87%;
+    @include flex-row;
+    justify-content: space-around;
+    align-items: center;
     &-content {
         @include flex-column;
-        justify-content: flex-start;
-        align-items: center;
-        p {
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.1px;
-        color: #FFFFFF;
-        font-family: Poppins Bold;
-        padding: 56px 0 78px;
         justify-content: center;
+        align-items: center;
+        margin: 88px 0 78px;
+        .footer-price {
+            @include flex-row;
+            justify-content: center;
+            align-items: center;
+            &-items {
+                margin: 0;
+                padding-left: 85px;
+                ul {
+                font-size: 15px;
+                line-height: 27px;
+                color: $white;
+                list-style: none;
+                padding-left: 0;
+                    li{
+                        padding: 10px 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.1px;
+            color: $white;
+            font-family: Poppins Bold;
+            margin: 0;
+            padding-top: 66px;
         }
     }
-        .price {
+    img {
+        padding: 0;
+        margin: 62px 90px 62px 86px;
+    }
+    &-contacts {
+        @include flex-column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0;
+        &__item {
             @include flex-row;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
-            margin-top: 78px;
-            &-items li {
+            img {
+                margin: 0;
+                padding: 11px 17.2px 11px 0;
+            }
+            p {
                 font-size: 15px;
                 line-height: 27px;
                 letter-spacing: 0.2px;
-                color: #FFFFFF;
-                padding: 10px 0;
-                list-style: none;
-                padding-left: 0;
-                text-align: center;
+                color: $white;
+                margin: 0;
             }
         }
-    .contacts {
-        &-item {
-            @include flex-row;
-            justify-content: start;
-            align-items: center;
-        }
-        p {
-            font-size: 15px;
-            line-height: 27px;
-            letter-spacing: 0.2px;
-            color: #FFFFFF;
-        }
-        &-item-social {
-            @include flex-row;
+        &-social {
             img {
-                @include flex-row;
-                padding-right: 33px;
+                padding: 22px 32px 0 0;
+                margin: 0;
             }
         }
     }
