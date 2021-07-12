@@ -22,6 +22,7 @@
     @include flex-row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
     &-education {
         text-align: center;
         background: $white;
