@@ -1,0 +1,53 @@
+.process {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    &-info {
+        width: 35%;
+        h1 {
+            font-size: 45px;
+            line-height: 57px;
+            letter-spacing: 0.2px;
+            color: $black;
+            margin: 0;
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: $gray;
+            font-family: Poppins Bold;
+            padding: 46px 0 36px;
+        }
+        &__buttons {
+            button {
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.2px;
+                color: $green;
+                padding: 18px 46px;
+                background: #FFFFFF;
+                border: 1px solid $green;
+                box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+                border-radius: 39px;
+                width: 203px;
+                height: 52px;
+            }
+            button.active {
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.2px;
+                color: $white;
+                padding: 18px 46px;
+                background: $blue;
+                box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+                border-radius: 39px;
+                width: 216px;
+                height: 52px;
+                border-style: none;
+                margin-right: 22px;
+            }
+        }
+    }
+
+}
