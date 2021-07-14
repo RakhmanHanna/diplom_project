@@ -18,8 +18,8 @@
         justify-content: space-around;
         align-items: center;
         &-item {
-            width: 401px;
-            height: 440.62px;
+            width: 406px;
+            height: 438px;
             @include flex-column;
             justify-content: center;
             align-items: flex-start;
@@ -31,9 +31,7 @@
             padding: 60px 60px 50px;
             margin: 0 15.5px;
             h2 {
-                font-size: 30px;
-                line-height: 33px;
-                letter-spacing: 0.1px;
+                font-size: 28px;
                 color: $black;
                 font-family: Poppins Bold;
                 margin: 0;
@@ -59,14 +57,13 @@
         }
         &-item:hover {
             width: 406px;
-            height: 438px;
+            height: 440px;
             background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
             border: 1px solid #DEDEDE;
             box-sizing: border-box;
             box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
             h2 {
                 color: $white;
-                
             }
             p {
                 color: $white;
