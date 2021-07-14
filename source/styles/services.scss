@@ -17,6 +17,9 @@
         @include flex-row;
         justify-content: space-around;
         align-items: center;
+        @media (max-width: $xl) {
+            @include flex-column;
+        }
         &-item {
             width: 406px;
             height: 438px;
@@ -30,6 +33,9 @@
             border-radius: 10px;
             padding: 60px 60px 50px;
             margin: 0 15.5px;
+            @media (max-width: $xl) {
+                margin-bottom: 30px;
+            }
             h2 {
                 font-size: 28px;
                 color: $black;

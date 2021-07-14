@@ -2,14 +2,26 @@
     @include flex-row;
     justify-content: center;
     align-items: center;
+    @media (max-width: $xl) {
+        @include flex-column;
+        flex-direction: column-reverse;
+    }
     &-image {
         margin: 110px 100px 110px 0;
+        @media (max-width: $xl) {
+            text-align: center;
+            margin: 50px auto;
+        }
         img {
             width: 100%;
         }
     }
     &-info {
         width: 40%;
+        @media (max-width: $xl) {
+            width: 60%;
+            text-align: center;
+        }
         h1 {
             font-size: 46px;
             line-height: 57px;
@@ -25,6 +37,9 @@
             font-family: Poppins Bold;
             margin: 47px 0 37px;
             width: 85%;
+            @media (max-width: $xl) {
+                width: 100%;
+            }
         }
         button {
             font-size: 16px;

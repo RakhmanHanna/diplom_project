@@ -4,6 +4,10 @@
     @include flex-row;
     justify-content: space-around;
     align-items: center;
+    @media (max-width: $xl) {
+        @include flex-column;
+        align-items: center;
+    }
     &-content {
         @include flex-column;
         justify-content: center;
@@ -16,6 +20,10 @@
             &-items {
                 margin: 0;
                 padding-left: 85px;
+                @media (max-width: $xl) {
+                    padding: 0;
+                    margin: 0 50px
+                }
                 ul {
                 font-size: 15px;
                 line-height: 27px;
@@ -46,12 +54,14 @@
     &-contacts {
         @include flex-column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         margin: 0;
         &__item {
-            @include flex-row;
-            justify-content: flex-start;
-            align-items: center;
+            @media (max-width: $xl) {
+                @include flex-row;
+                justify-content: center;
+                align-items: center;
+            }
             img {
                 margin: 0;
                 padding: 11px 17.2px 11px 0;
@@ -65,9 +75,17 @@
             }
         }
         &-social {
+            @media (max-width: $xl) {
+                @include flex-row;
+                justify-content: space-between;
+                align-items: center;
+            }
             img {
                 padding: 22px 32px 0 0;
                 margin: 0;
+                @media (max-width: $xl) {
+                    padding: 15px;
+                }
             }
         }
     }

@@ -27,6 +27,11 @@
             padding: 46px 25.5px 0;
             display: inline-block;
         }
+        @media(max-width: $md) {
+            a {
+            padding: 46px 15px 0;
+            }
+        }
     }
     button {
         font-weight: 500;
