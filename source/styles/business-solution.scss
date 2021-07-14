@@ -1,10 +1,13 @@
 .business-solution {
     @include flex-row;
+    flex: 1;
     justify-content: center;
     align-items: center;
-    width: 90%;
     &-info {
         width: 35%;
+        @include flex-column;
+        justify-content: center;
+        align-items: flex-start;
         h1 {
             font-size: 46px;
             line-height: 57px;
@@ -21,6 +24,8 @@
             width: 55%;
         }
         &__buttons {
+            @include flex-row;
+            justify-content: flex-end;
             button {
                 font-size: 16px;
                 line-height: 16px;
@@ -51,10 +56,10 @@
         }
     }
     &-image {
-        width: 60%;
+        width: 50%;
         img {
             width: 100%;
-            padding: 124px 164px 73px 69.5px;
+            padding: 124px 73px;
         }
     }
 }
