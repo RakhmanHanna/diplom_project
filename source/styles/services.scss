@@ -36,6 +36,9 @@
             @media (max-width: $xl) {
                 margin-bottom: 30px;
             }
+            @media (max-width: $md) {
+                height: 404px;
+            }
             h2 {
                 font-size: 28px;
                 color: $black;

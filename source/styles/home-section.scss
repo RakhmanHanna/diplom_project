@@ -4,6 +4,9 @@
         width: 50%;
         text-align: center;
         margin: 0 auto;
+        @media (max-width: $md) {
+            width: 59%;
+        }
         h1 {
             font-size: 55px;
             line-height: 65px;
@@ -12,6 +15,14 @@
             font-family: Poppins Extra Bold;
             margin: 0;
             padding-top: 174px;
+            @media (max-width: $md) {
+                font-size: 45px;
+                line-height: 57px;
+                letter-spacing: 0.2px;
+                text-align: center;
+                font-family: Poppins Medium;
+                padding-top: 79px;
+            }
         }
         p {
             font-size: 16px;
@@ -20,9 +31,16 @@
             color: $lightGray;
             font-family: Poppins Bold;
             padding: 27px 0 71px;
+            @media (max-width: $md) {
+                padding: 27px 0 55px;
+            }
         }
     }
     &__buttons {
+        @media (max-width: $md) {
+            @include flex-column;
+            align-items: center;
+        }
         button {
             font-size: 16px;
             line-height: 16px;
@@ -35,6 +53,12 @@
             background: transparent;
             margin: 18px 46px;
             margin-left: 6.5px;
+            @media (max-width: $md) {
+                width: 252px;
+                height: 52px;
+                padding: 0;
+                margin-bottom: 5px;
+            }
         }
         button:hover {
             color: #112D57;
@@ -47,7 +71,9 @@
         width: 100%;
         padding: 119px 0 85px;
         @media (max-width: $xl) {
-            width: 70%;
+            width: 364px;
+            height: 224px;
+            padding: 100px 0 50px 0;
         }
     }
 }

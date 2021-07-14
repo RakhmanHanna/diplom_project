@@ -16,6 +16,10 @@
             width: 70%;
             text-align: center;
         }
+        @media (max-width: $md) {
+            @include flex-column;
+            align-items: center;
+        }
         h1 {
             font-size: 46px;
             line-height: 57px;
@@ -33,10 +37,17 @@
             @media (max-width: $xl) {
                 width: 100%;
             }
+            @media (max-width: $md) {
+                padding-top: 27px;
+            }
         }
         &__buttons {
             @include flex-row;
             justify-content: flex-end;
+            @media (max-width: $md) {
+                @include flex-column;
+                align-items: center;
+            }
             button {
                 font-size: 16px;
                 line-height: 16px;
@@ -53,6 +64,12 @@
                 @media (max-width: $xl) {
                     margin-right: 210px;
                 }
+                @media (max-width: $md) {
+                    width: 294px;
+                    height: 76px;
+                    padding: 0;
+                    margin: 13px 0 0 0;
+                }
             }
             button:hover {
                 color: $white;
@@ -60,6 +77,10 @@
                 width: 216px;
                 border-style: none;
                 margin-right: 7px;
+                @media (max-width: $md) {
+                    width: 294px;
+                    height: 76px;
+                }
             }
         }
     }

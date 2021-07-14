@@ -22,6 +22,11 @@
         padding: 27px 0 69px;
     }
     &-form {
+        @media (max-width: $md) {
+            @include flex-column;
+            align-items: center;
+            width: 100%;
+        }
         padding-bottom: 113px;
         input {
             font-size: 15px;
@@ -36,6 +41,13 @@
             border-radius: 6px;
             padding: 14px 28px;
             margin-right: 5px;
+            font-family: Poppins Bold;
+            @media (max-width: $md) {
+                width: 483px;
+                height: 62px;
+                text-align: center;
+                margin: 0;
+            }
         }
         button {
             font-weight: 500;
@@ -51,6 +63,13 @@
             padding: 18px 46px;
             margin-left: 5px;
             border-style: none;
+            @media (max-width: $md) {
+                box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+                border-radius: 6px;
+                width: 483px;
+                height: 62px;
+                margin: 0;
+            }
         }
     }
 }

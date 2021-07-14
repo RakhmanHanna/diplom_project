@@ -7,6 +7,9 @@
         line-height: 57px;
         letter-spacing: 0.2px;
         color: $black;
+        @media (max-width: $md) {
+            margin: 0 80px;
+        }
     }
     p {
         font-size: 18px;
@@ -15,6 +18,10 @@
         letter-spacing: 0.2px;
         color: $gray;
         padding-bottom: 63px;
+        @media (max-width: $md) {
+            padding: 0;
+            margin: 22px 121px 65px 121px;
+        }
     }
 }
 
