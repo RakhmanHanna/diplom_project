@@ -60,7 +60,7 @@
                 border-radius: 39px;
                 width: 210px;
                 height: 52px;
-                margin-right: 7px;
+                margin-right: 22px;
                 @media (max-width: $xl) {
                     margin-right: 210px;
                 }
@@ -74,9 +74,7 @@
             button:hover {
                 color: $white;
                 background: $blue;
-                width: 216px;
                 border-style: none;
-                margin-right: 7px;
                 @media (max-width: $md) {
                     width: 294px;
                     height: 76px;

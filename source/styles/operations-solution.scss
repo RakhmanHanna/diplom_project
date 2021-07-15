@@ -51,13 +51,26 @@
             font-size: 16px;
             line-height: 16px;
             letter-spacing: 0.2px;
-            color: $white;
+            color: $green;
             padding: 18px 46px;
-            background: $blue;
+            background: $white;
+            padding: 18px 46px;
             box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
             border-radius: 39px;
             width: 147px;
             height: 52px;
+            border-style: none;
+            background: #FFFFFF;
+            border: 1px solid #30D7BA;
+        }
+        button:hover {
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.2px;
+            color: $white;
+            background: $blue;
+            box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+            border-radius: 39px;
             border-style: none;
         }
     }
