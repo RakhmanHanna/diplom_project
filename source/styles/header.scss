@@ -10,6 +10,9 @@
         }
     }
     &__menu {
+        @media (max-width: $md) {
+            display: none;
+        }
         nav {
             @include flex-row;
             justify-content: space-between;
@@ -57,49 +60,34 @@
     }
     &__burger {
         display: none;
+        padding-top: 15px;
+        &-1 {
+            width: 44px;
+            height: 6px;
+            background-color: $white;
+            margin: 6px 0;
+        }
+        &-2 {
+            width: 34px;
+            height: 6px;
+            background-color: $white;
+            margin: 6px 0;
+            position: relative;
+            left: 10px;
+        }
+        &-3 {
+            width: 24px;
+            height: 6px;
+            background-color: $white;
+            margin: 6px 0;
+            position: relative;
+            left: 20px;
+        }
         @media (max-width: $md) {
             display: block;
             position: relative;
             width: 44px;
             height: 26.5px;
-            nav {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-    &__burger:before,
-    &__burger:after {
-        @media (max-width: $md) {
-            content:'';
-            background-color: $white;
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            left: 0;
-        }
-    }
-    &__burger:before {
-        @media (max-width: $md) {
-            top: 0;
-        }
-    }
-    &__burger:after {
-        @media (max-width: $md) {
-            bottom: 0;
-        }
-    }
-    &-burger span {
-        @media (max-width: $md) {
-            position: absolute;
-            background-color: $white;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            top: 9px;
         }
     }
 }
