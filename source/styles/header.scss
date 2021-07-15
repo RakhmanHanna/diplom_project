@@ -52,6 +52,13 @@
             border: 1px solid #FFFFFF;
             padding: 18px 46px;
             margin-top: 33px;
+            @media (max-width: $md) {
+                width: 120px;
+                height: 52px;
+                padding: 10px 10px;
+                font-size: 14px;
+                letter-spacing: 0.1px;
+            }
         }
         button:hover {
             color: #112D57;

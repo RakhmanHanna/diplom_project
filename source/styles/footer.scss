@@ -24,6 +24,9 @@
                     padding: 0;
                     margin: 0 50px
                 }
+                @media (max-width: $md) {
+                    margin-right: 45px;
+                }
                 ul {
                 font-size: 15px;
                 line-height: 27px;
@@ -49,13 +52,18 @@
             right: 105px;
             bottom: 25px;
             @media (max-width: $md) {
-                text-align: start;
+                position: relative;
+                right: 60px;
             }
         }
     }
     img {
         padding: 62px 90px 62px 0;
         margin: 0;
+        @media (max-width: $md) {
+            padding: 0;
+            margin-bottom: 97px;
+        }
     }
     &-contacts {
         @include flex-column;
@@ -97,6 +105,9 @@
                 margin: 0;
                 @media (max-width: $xl) {
                     padding: 15px;
+                }
+                @media (max-width: $md) {
+                    padding: 22px 32px 86px 0;
                 }
             }
         }
