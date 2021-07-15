@@ -88,6 +88,9 @@
             @include flex-row;
             justify-content: center;
         }
+        @media (max-width: $md) {
+            width: 100%;
+        }
         img {
             width: 100%;
             padding: 124px 73px;
